@@ -135,7 +135,7 @@ popd
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # Change default package
-sed -i 's/luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier //g' target/linux/ipq40xx/Makefile
+sed -i 's/automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier //g' target/linux/ipq40xx/Makefile
 sed -i 's/luci-app-vsftpd //g' include/target.mk
 sed -i 's/luci-app-unblockmusic //g' include/target.mk
 sed -i 's/luci-app-nlbwmon luci-app-accesscontrol //g' include/target.mk
