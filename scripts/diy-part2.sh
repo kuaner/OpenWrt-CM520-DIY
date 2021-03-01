@@ -132,7 +132,8 @@ make && sudo make install
 popd
 
 # Change default shell to bash
-sed -i 's/\/bin\/ash/\/usr\/bin\/bash/g' package/base-files/files/etc/passwd
+sed -i 's/\/bin\/ash/\/bin\/bash/g' package/base-files/files/etc/passwd
+sed -i 's/\/bin\/ash/\/bin\/bash/g' package/base-files/files/etc/shells
 
 # Change default package
 sed -i 's/automount autosamba luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier //g' target/linux/ipq40xx/Makefile
